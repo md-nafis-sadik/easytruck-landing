@@ -1,0 +1,11 @@
+export const HOME_PAGE_ID = "home";
+export const COMPANY_PAGE_ID = "company";
+export const ABOUT_PAGE_ID = "about";
+export const USER_PAGE_ID = "user";
+export const GOAL_PAGE_ID = "goal";
+export const FAQ_PAGE_ID = "faq";
+export const DOWNLOAD_PAGE_ID = "download";
+export const HELP_PAGE_ID = "help";
+export const SERVICE_PAGE_ID = "service";
+export const CONTACT_PAGE_ID = "contact";
+export const PRIVACY_PAGE_ID = "privacy";
