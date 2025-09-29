@@ -75,10 +75,22 @@
   /* fonts  */
   --font-siliguri: var(--font-hind-siliguri);
   --font-inter: var(--font-inter);
+  /* custom space  */
+  --spacing-5xl: 3.75rem; /* 60px */
+  --spacing-7xl: 7.5rem; /* 120px */
+  /* font size  */
+  --text-3xs: 1.75rem; /* 28rem */
+  --text-4xs: 2rem; /* 32rem */
+  /* border-radius  */
+  --radius-3xs: 1.25rem; /* 20px */
 }
 
 .containerX {
   @apply w-full max-w-[120rem] mx-auto px-6 md:px-10 lg:px-20 xl:px-28 2xl:px-40 duration-200;
+}
+
+.tag {
+  @apply w-full h-max max-w-max px-4 py-3.5 bg-white-200 text-black-900 text-base font-semibold leading-[125%] rounded-full;
 }
 
 .btn {

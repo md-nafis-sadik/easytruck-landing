@@ -119,9 +119,9 @@ export const aboutData: IAboutData = {
     buttonText: "আরো জানুন",
     buttonLink: "",
   },
-  icon: <WifiIcon className="text-white" />,
+  icon: <WifiIcon className="text-main-500" />,
   image: images.about,
-  bannerTitle: "আপনার ট্রাক ভাড়া করার সেরা উপায়",
+  bannerTitle: "চলে আসুন ইজিট্রাকে এবং\n আয় বৃদ্ধি করুন।",
 };
 
 // users
