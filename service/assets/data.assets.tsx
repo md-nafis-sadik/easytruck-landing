@@ -279,7 +279,7 @@ export const appdownloadData: IDownloadAppData = {
   title: "আমাদের মোবাইল অ্যাপ",
   subTitle: "ডাউনলোড করুন",
   description:
-    "ইন্ডাস্ট্রিয়াল পরিবহন খাতে স্বচ্ছতা, গতিশীলতা ও খরচ কমিয়ে আনাই আমাদের মুল লক্ষ্য। ",
+    "ইন্ডাস্ট্রিয়াল পরিবহন খাতে স্বচ্ছতা, গতিশীলতা ও খরচ কমিয়ে \nআনাই আমাদের মুল লক্ষ্য। ",
   driverAppBtnTitle: "ড্রাইভার অ্যাপ",
   driverAppBtnLink: "",
   retailerAppBtnTitle: "রিটেইলার/কোম্পানি অফিসার অ্যাপ",
