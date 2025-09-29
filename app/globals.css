@@ -81,6 +81,7 @@
   /* font size  */
   --text-3xs: 1.75rem; /* 28rem */
   --text-4xs: 2rem; /* 32rem */
+  --text-7xs: 4rem; /* 64rem */
   /* border-radius  */
   --radius-3xs: 1.25rem; /* 20px */
 }
@@ -98,6 +99,10 @@
   &:active {
     @apply scale-90;
   }
+}
+
+.title {
+  @apply text-7xs font-bold text-black-800 leading-[130%] -tracking-[0.08rem];
 }
 
 body {

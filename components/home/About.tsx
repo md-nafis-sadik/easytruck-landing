@@ -2,7 +2,7 @@ import { aboutData, CheckCircleIcon } from "@/service";
 
 function About() {
   return (
-    <div className="py-7xl">
+    <section className="py-7xl">
       <div className="containerX">
         <div className="flex justify-between gap-4">
           <div className="tag">{aboutData.tag}</div>
@@ -65,7 +65,7 @@ function About() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

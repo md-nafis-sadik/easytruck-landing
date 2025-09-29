@@ -168,6 +168,7 @@ export const userData: IUserData = {
       isImage: true,
       image: images.contact,
       contacts: ["01712-898613", "01898-923559"],
+      phoneIcon:<PhoneIcon className="text-white" />,
     },
   ],
 };

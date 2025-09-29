@@ -72,6 +72,7 @@ interface IUserService {
   image?: StaticImageData;
   isImage?: boolean;
   contacts?: string[];
+  phoneIcon?: ReactNode;
 }
 
 interface IUserData {
