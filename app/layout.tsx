@@ -1,3 +1,5 @@
+import Footer from "@/components/navigations/Footer";
+import Header from "@/components/navigations/Header";
 import type { Metadata } from "next";
 import { Hind_Siliguri } from "next/font/google";
 import "./globals.css";
@@ -20,7 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${siliguri.variable} antialiased`}>{children}</body>
+      <body className={`${siliguri.variable} antialiased`}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

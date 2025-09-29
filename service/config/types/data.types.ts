@@ -5,7 +5,6 @@ import { ReactNode } from "react";
 
 interface IHeaderData {
   logo: ReactNode;
-  logoTitle: string;
   appDownloadBtnTitle: string;
   appDownloadBtnLink: string;
   appDownloadBtnIcon: ReactNode;
@@ -151,7 +150,6 @@ interface IDownloadAppData {
 
 interface IFooterData {
   logo: ReactNode;
-  logoTitle: string;
   description: string;
   contacts: string[];
   addressTitle: string;

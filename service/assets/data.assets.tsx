@@ -41,7 +41,6 @@ import {
 
 export const headerData: IHeaderData = {
   logo: <LogoIcon />,
-  logoTitle: "ইজি ট্রাক",
   appDownloadBtnTitle: "অ্যাপ ডাউনলোড করুন",
   appDownloadBtnLink: "",
   appDownloadBtnIcon: <AppDownloadIcon className="text-white" />,
@@ -287,7 +286,6 @@ export const appdownloadData: IDownloadAppData = {
 
 export const footerData: IFooterData = {
   logo: <LogoIcon color={colors["blue-900"]} />,
-  logoTitle: "ইজি ট্রাক",
   description: "হাতের মুঠোয় ট্রাক ভাড়ার স্মার্ট সমাধান",
   contacts: ["01712-898613", "01898-923559"],
   addressTitle: "ইজি ভেঞ্চারস",

@@ -1,10 +1,25 @@
-export default function Home() {
+import About from "@/components/home/About";
+import Company from "@/components/home/Company";
+import Goal from "@/components/home/Goal";
+import Hero from "@/components/home/Hero";
+import Service from "@/components/home/Service";
+import User from "@/components/home/User";
+import Download from "@/components/shared/Download";
+import Faq from "@/components/shared/Faq";
+
+function page() {
   return (
-    <div className="font-siliguri grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <h2 className="text-5xl font-bold text-main-50">
-        হাতের মুঠোয় ট্রাক ভাড়ার, <span className="text-main-500">
-        </span>
-      </h2>
-    </div>
+    <main>
+      <Hero />
+      <Company />
+      <About />
+      <User />
+      <Service />
+      <Goal />
+      <Faq />
+      <Download />
+    </main>
   );
 }
+
+export default page;
