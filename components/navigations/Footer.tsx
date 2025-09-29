@@ -1,5 +1,87 @@
+import { colors, footerData, HOME_PAGE_ID, LogoIcon } from "@/service";
+import Link from "next/link";
+
 function Footer() {
-  return <div>Footer Footer</div>;
+  return (
+    <footer className="py-5 md:py-10 lg:py-16 xl:py-20">
+      <div className="w-full max-w-[120rem] mx-auto px-5 md:px-10 lg:px-16 xl:px-20">
+        <div className="w-full flex justify-between items-start pb-8">
+          <div>
+            <Link href={`#${HOME_PAGE_ID}`}>
+              <LogoIcon
+                color={colors["blue-900"]}
+                textColor={colors["blue-900"]}
+              />
+            </Link>
+            <p className="text-xl text-black-600 my-6">
+              {footerData.description}
+            </p>
+            <a
+              href={`tel:${footerData.contacts[0]}`}
+              className="btn gap-3 bg-main-500 pl-2 pr-12 py-2 font-inter rounded-2xl text-white"
+            >
+              {footerData.phoneIcon}
+              <p className="flex flex-col font-bold text-xl leading-[120%]">
+                <span>{footerData.contacts[0]}</span>
+                <span>{footerData.contacts[1]}</span>
+              </p>
+            </a>
+          </div>
+          <div>
+            <h4 className="text-2xl font-bold text-black-800 mb-4">
+              {footerData.addressTitle}
+            </h4>
+            <p className="text-xl text-black-600 whitespace-pre-wrap">
+              {footerData.address}
+            </p>
+          </div>
+          <ul className="flex flex-col gap-4 font-inter">
+            {footerData.links.map((item, index) => (
+              <li key={index}>
+                <Link
+                  className="block  text-base font-medium text-black-700"
+                  href={`#${item?.link}`}
+                >
+                  {item?.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <ul className="flex items-center gap-3">
+            {footerData.socialLinks.map((item, index) => (
+              <li key={index}>
+                <Link
+                  className="w-11 h-11 flex items-center justify-center bg-black-800 rounded-full hover:bg-main-500 duration-200"
+                  href={`#${item?.link}`}
+                >
+                  {item?.icon}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="flex items-center justify-between pt-8 border-t border-black/10 font-inter">
+          <p className="text-sm text-black-700">
+            {footerData.copyrightTexts[0]}
+            <span className="font-bold">{footerData.copyrightTexts[1]}</span>
+            {footerData.copyrightTexts[2]}
+          </p>
+          <ul className="flex gap-4">
+            <li>
+              <Link className="text-sm text-black-700" href={`#`}>
+                {footerData?.privacyPolicyText}
+              </Link>
+            </li>
+            <li>
+              <Link className="text-sm text-black-700" href={`#`}>
+                {footerData?.helpCenterText}
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
 export default Footer;

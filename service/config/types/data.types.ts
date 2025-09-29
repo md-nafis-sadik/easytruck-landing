@@ -165,7 +165,8 @@ interface IFooterData {
     icon: ReactNode;
     link: string;
   }[];
-  copyrightText: string;
+  phoneIcon: ReactNode;
+  copyrightTexts: string[];
   privacyPolicyText: string;
   privacyPolicyLink: string;
   helpCenterText: string;
