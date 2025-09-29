@@ -9,7 +9,7 @@ import Faq from "@/components/shared/Faq";
 
 function page() {
   return (
-    <main>
+    <main className="font-siliguri">
       <Hero />
       <Company />
       <About />

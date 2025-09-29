@@ -31,6 +31,8 @@ import {
   FacebookIcon,
   LogoIcon,
   PaymentIcon,
+  PhoneIcon,
+  PlayIcon,
   ShieldIcon,
   SupportIcon,
   UserIcon,
@@ -70,6 +72,8 @@ export const bannerData: IBannerData = {
       description: "আমাদের সাপোর্ট সেন্টার খোলা আছে সর্বোদা",
     },
   ],
+  phoneIcon: <PhoneIcon className="text-white" />,
+  playIcon: <PlayIcon className="text-white" />,
 };
 
 // companies

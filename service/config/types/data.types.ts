@@ -28,6 +28,8 @@ interface IBannerData {
   services: IBannerService[];
   banner: StaticImageData;
   bannerBg: StaticImageData;
+  phoneIcon: ReactNode;
+  playIcon: ReactNode;
 }
 
 // comanies

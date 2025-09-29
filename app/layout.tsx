@@ -1,13 +1,18 @@
 import Footer from "@/components/navigations/Footer";
 import Header from "@/components/navigations/Header";
 import type { Metadata } from "next";
-import { Hind_Siliguri } from "next/font/google";
+import { Hind_Siliguri, Inter } from "next/font/google";
 import "./globals.css";
 
 const siliguri = Hind_Siliguri({
   weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-hind-siliguri",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -22,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${siliguri.variable} antialiased`}>
+      <body className={`${siliguri.variable} ${inter.variable} antialiased`}>
         <Header />
         {children}
         <Footer />
