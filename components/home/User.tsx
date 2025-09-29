@@ -51,7 +51,7 @@ function User() {
                   <p className="text-2xl font-bold text-black-900 leading-[125%]">
                     {item?.title}
                   </p>
-                  <p className="text-base text-black-700 leading-[162%]">
+                  <p className="text-base text-black-700 leading-[162%] mt-2">
                     {item?.description}
                   </p>
                 </div>

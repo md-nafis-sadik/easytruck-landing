@@ -121,7 +121,7 @@ export const aboutData: IAboutData = {
   },
   icon: <WifiIcon className="text-main-500" />,
   image: images.about,
-  bannerTitle: "চলে আসুন ইজিট্রাকে এবং\n আয় বৃদ্ধি করুন।",
+  bannerTitle: "চলে আসুন ইজিট্রাকে এবং\nআয় বৃদ্ধি করুন।",
 };
 
 // users
@@ -168,7 +168,7 @@ export const userData: IUserData = {
       isImage: true,
       image: images.contact,
       contacts: ["01712-898613", "01898-923559"],
-      phoneIcon:<PhoneIcon className="text-white" />,
+      phoneIcon: <PhoneIcon className="text-white" />,
     },
   ],
 };
@@ -177,8 +177,8 @@ export const userData: IUserData = {
 
 export const serviceData: IServiceData = {
   id: SERVICE_PAGE_ID,
-  tag: "",
-  title: "",
+  tag: "ব্যবহার করার কারন",
+  title: "কেন আমাদের সার্ভিস ব্যাবহার করবেন?",
   services: [
     {
       icon: <BookMarkIcon className="text-main-500" />,
