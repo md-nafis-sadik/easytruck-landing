@@ -44,7 +44,13 @@ import {
 // header
 
 export const headerData: IHeaderData = {
-  logo: <LogoIcon />,
+  logo: (
+    <LogoIcon
+      className="w-28 md:w-36 lg:w-44 duration-200"
+      color={colors["main-500"]}
+      textColor={colors["main-500"]}
+    />
+  ),
   appDownloadBtnTitle: "অ্যাপ ডাউনলোড করুন",
   appDownloadBtnLink: "",
   appDownloadBtnIcon: <AppDownloadIcon className="text-white" />,
@@ -317,27 +323,27 @@ export const footerData: IFooterData = {
   ],
   socialLinks: [
     {
-      icon: <FacebookIcon className="text-white" />,
+      icon: <FacebookIcon className="w-4 aspect-square md:w-5 text-white" />,
       link: "",
       ariaLabel: "Facebook",
     },
     {
-      icon: <InstagramIcon className="text-white" />,
+      icon: <InstagramIcon className="w-4 aspect-square md:w-5 text-white" />,
       link: "",
       ariaLabel: "Instagram",
     },
     {
-      icon: <LinkedInIcon className="text-white" />,
+      icon: <LinkedInIcon className="w-4 aspect-square md:w-5 text-white" />,
       link: "",
       ariaLabel: "Linked in",
     },
     {
-      icon: <TwitterIcon className="text-white" />,
+      icon: <TwitterIcon className="w-4 aspect-square md:w-5 text-white" />,
       link: "",
       ariaLabel: "Twitter",
     },
   ],
-  phoneIcon: <PhoneIcon className="text-white" />,
+  phoneIcon: <PhoneIcon className="w-6 md:w-8 lg:w-10 text-white" />,
   copyrightTexts: ["© 2025", " EasyTruck.", " All rights reserved."],
   privacyPolicyLink: "",
   privacyPolicyText: "Privacy & Policy",
