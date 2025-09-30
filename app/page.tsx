@@ -1,5 +1,6 @@
 import About from "@/components/home/About";
 import Hero from "@/components/home/Hero";
+import User from "@/components/home/User";
 
 function page() {
   return (
@@ -7,7 +8,7 @@ function page() {
       <Hero />
       {/* <Company /> */}
       <About />
-      {/* <User /> */}
+      <User />
       {/* <Service /> */}
       {/* <Goal /> */}
       {/* <Faq /> */}

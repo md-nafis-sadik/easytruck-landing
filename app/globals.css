@@ -104,7 +104,7 @@
 }
 
 .title {
-  @apply text-7xs font-bold text-black-800 leading-[130%] -tracking-[0.08rem];
+  @apply text-4xl md:text-5xl lg:text-7xs font-bold text-black-800 leading-[130%] -tracking-[0.08rem];
 }
 
 body {

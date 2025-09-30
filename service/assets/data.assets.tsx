@@ -136,31 +136,31 @@ export const userData: IUserData = {
     "ইজিট্রাক অ্যাপের মাধ্যমে ড্রাইভার, ট্রাক মালিক, রিটেইলার, কোম্পানি প্রতিনিধি ও ডিলারগণ ট্রাক বুকিং, সময়মতো ডেলিভারি, ইন অ্যাপ পেমেন্ট এবং রিপোর্টসহ সকল ধরনের সুবিধা পাবেন।",
   services: [
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "ড্রাইভার",
       description:
         "প্রতিদিন ট্রিপ নিশ্চিত, স্বচ্ছ সেবা চার্জ মডেল, সরাসরি ট্রিপ রিকোয়েস্ট ও পেমেন্ট।",
     },
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "ট্রাক মালিক",
       description:
         "প্রতিদিন নতুন ট্রিপের সুযোগ, ইন-অ্যাপ পেমেন্ট সুবিধা, ভাড়া নির্ধারণে স্বচ্ছতা এবং ঝামেলাহীনভাবে ব্যবসা করার নিশ্চয়তা।",
     },
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "রিটেইলার",
       description:
         "দ্রুত ট্রিপ বুকিং, সময়মতো ডেলিভারি, ডিজিটাল রিপোর্ট ও ইনভয়েস সুবিধার মাধ্যমে ব্যবসা পরিচালনা।",
     },
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "কোম্পানি অফিসার",
       description:
         "সহজে ট্রিপ বুকিং, ইনভয়েস ও রিপোর্ট ডাউনলোড, নির্ভরযোগ্য ও দ্রুত পরিবহন ব্যবস্থা।",
     },
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "ডিলার",
       description:
         "দ্রুত ট্রিপ বুকিং, সময়মতো ডেলিভারি, ডিজিটাল রিপোর্ট ও ইনভয়েস সুবিধার মাধ্যমে ব্যবসা পরিচালনা।",
@@ -170,7 +170,7 @@ export const userData: IUserData = {
       isImage: true,
       image: images.contact,
       contacts: ["01712-898613", "01898-923559"],
-      phoneIcon: <PhoneIcon className="text-white" />,
+      phoneIcon: <PhoneIcon className="w-6 md:w-8 lg:w-10 text-white" />,
     },
   ],
 };
