@@ -34,11 +34,11 @@ export const metadata: Metadata = {
     title: "EasyTruck - Smart Truck Rental Solution",
     description:
       "Book and track trucks easily with EasyTruck. A safe, affordable, and smart solution for transport in Bangladesh.",
-    url: "https://your-domain.com",
+    url: "https://easy-truck.vercel.app",
     siteName: "EasyTruck",
     images: [
       {
-        url: "/images/banner.png", // replace with your actual banner image
+        url: "/images/banner.png",
         width: 1200,
         height: 630,
         alt: "EasyTruck Banner",
@@ -53,7 +53,7 @@ export const metadata: Metadata = {
     title: "EasyTruck - Smart Truck Rental Solution",
     description:
       "Smart truck rental and transport solution in Bangladesh. Book, track, and pay easily with EasyTruck.",
-    images: ["/images/banner.png"], // replace
+    images: ["/images/banner.png"],
   },
   icons: {
     icon: "/favicon.ico",
