@@ -24,7 +24,7 @@ function Hero() {
             <div className="flex gap-3 mt-12">
               <a
                 href={`tel:${bannerData.contacts[0]}`}
-                className="btn gap-3 bg-main-500 pl-2 pr-12 py-2 font-inter rounded-2xl"
+                className="btn gap-3 bg-main-600 pl-2 pr-12 py-2 font-inter rounded-2xl"
               >
                 {bannerData.phoneIcon}
                 <p className="flex flex-col font-bold text-xl leading-[120%]">
@@ -48,7 +48,7 @@ function Hero() {
             alt="banner"
             className="absolute top-0 left-0 w-full h-full object-cover rounded-t-2xl"
           />
-          <div className="flex flex-col gap-8 py-8 px-10 bg-main-500 relative w-full max-w-[22.5rem] rounded-2xl">
+          <div className="flex flex-col gap-8 py-8 px-10 bg-main-600 relative w-full max-w-[22.5rem] rounded-2xl">
             {bannerData.services.map((service, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-[3.75rem] aspect-square flex items-center justify-center bg-white rounded-full shrink-0">

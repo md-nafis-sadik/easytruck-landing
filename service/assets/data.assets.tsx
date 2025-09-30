@@ -27,7 +27,6 @@ import { images } from "./images.assets";
 import {
   AppDownloadIcon,
   BookMarkIcon,
-  ChevronDownIcon,
   FacebookIcon,
   InstagramIcon,
   LinkedInIcon,
@@ -241,42 +240,36 @@ export const faqData: IFaqData = {
       question: "EasyTruck কী ধরনের সেবা দেয়?",
       answer:
         "EasyTruck একটি স্মার্ট প্ল্যাটফর্ম, যেখানে ড্রাইভার, ট্রাক মালিক, রিটেইলার এবং কোম্পানিগুলো সহজে ট্রিপ বুকিং, ট্র্যাকিং ও ডিজিটাল পেমেন্ট করতে পারে।",
-      
     },
     {
       id: "2",
       question: "EasyTruck ব্যবহার করতে কি আলাদা চার্জ আছে?",
       answer:
         "EasyTruck একটি স্মার্ট প্ল্যাটফর্ম, যেখানে ড্রাইভার, ট্রাক মালিক, রিটেইলার এবং কোম্পানিগুলো সহজে ট্রিপ বুকিং, ট্র্যাকিং ও ডিজিটাল পেমেন্ট করতে পারে।",
-      
     },
     {
       id: "3",
       question: "আমি কি ট্রাকের অবস্থান সরাসরি ট্র্যাক করতে পারবো?",
       answer:
         "EasyTruck একটি স্মার্ট প্ল্যাটফর্ম, যেখানে ড্রাইভার, ট্রাক মালিক, রিটেইলার এবং কোম্পানিগুলো সহজে ট্রিপ বুকিং, ট্র্যাকিং ও ডিজিটাল পেমেন্ট করতে পারে।",
-      
     },
     {
       id: "4",
       question: "আমি কীভাবে নতুন ট্রিপ বুক করবো?",
       answer:
         "EasyTruck একটি স্মার্ট প্ল্যাটফর্ম, যেখানে ড্রাইভার, ট্রাক মালিক, রিটেইলার এবং কোম্পানিগুলো সহজে ট্রিপ বুকিং, ট্র্যাকিং ও ডিজিটাল পেমেন্ট করতে পারে।",
-      
     },
     {
       id: "5",
       question: "ড্রাইভার ও কোম্পানির মধ্যে সরাসরি যোগাযোগ কি সম্ভব?",
       answer:
         "EasyTruck একটি স্মার্ট প্ল্যাটফর্ম, যেখানে ড্রাইভার, ট্রাক মালিক, রিটেইলার এবং কোম্পানিগুলো সহজে ট্রিপ বুকিং, ট্র্যাকিং ও ডিজিটাল পেমেন্ট করতে পারে।",
-      
     },
     {
       id: "6",
       question: "পেমেন্ট পদ্ধতি কী?",
       answer:
         "EasyTruck একটি স্মার্ট প্ল্যাটফর্ম, যেখানে ড্রাইভার, ট্রাক মালিক, রিটেইলার এবং কোম্পানিগুলো সহজে ট্রিপ বুকিং, ট্র্যাকিং ও ডিজিটাল পেমেন্ট করতে পারে।",
-      
     },
   ],
 };
@@ -326,18 +319,22 @@ export const footerData: IFooterData = {
     {
       icon: <FacebookIcon className="text-white" />,
       link: "",
+      ariaLabel: "Facebook",
     },
     {
       icon: <InstagramIcon className="text-white" />,
       link: "",
+      ariaLabel: "Instagram",
     },
     {
       icon: <LinkedInIcon className="text-white" />,
       link: "",
+      ariaLabel: "Linked in",
     },
     {
       icon: <TwitterIcon className="text-white" />,
       link: "",
+      ariaLabel: "Twitter",
     },
   ],
   phoneIcon: <PhoneIcon className="text-white" />,

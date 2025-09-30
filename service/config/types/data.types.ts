@@ -165,6 +165,7 @@ interface IFooterData {
   socialLinks: {
     icon: ReactNode;
     link: string;
+    ariaLabel?: string;
   }[];
   phoneIcon: ReactNode;
   copyrightTexts: string[];

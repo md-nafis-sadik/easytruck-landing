@@ -7,7 +7,7 @@ function Footer() {
       <div className="w-full max-w-[120rem] mx-auto px-5 md:px-10 lg:px-16 xl:px-20">
         <div className="w-full flex justify-between items-start pb-8">
           <div>
-            <Link href={`#${HOME_PAGE_ID}`}>
+            <Link href={`#${HOME_PAGE_ID}`} aria-label="Go to Home">
               <LogoIcon
                 color={colors["blue-900"]}
                 textColor={colors["blue-900"]}
@@ -28,9 +28,9 @@ function Footer() {
             </a>
           </div>
           <div>
-            <h4 className="text-2xl font-bold text-black-800 mb-4">
+            <h2 className="text-2xl font-bold text-black-800 mb-4">
               {footerData.addressTitle}
-            </h4>
+            </h2>
             <p className="text-xl text-black-600 whitespace-pre-wrap">
               {footerData.address}
             </p>
@@ -53,6 +53,7 @@ function Footer() {
                 <Link
                   className="w-11 h-11 flex items-center justify-center bg-black-800 rounded-full hover:bg-main-500 duration-200"
                   href={`#${item?.link}`}
+                  aria-label={item?.ariaLabel}
                 >
                   {item?.icon}
                 </Link>
