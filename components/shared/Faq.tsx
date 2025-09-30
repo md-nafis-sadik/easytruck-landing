@@ -1,9 +1,17 @@
 "use client";
-import { faqData } from "@/service";
-import { useRef } from "react";
+import { ChevronDownIcon, cn, faqData } from "@/service";
+import { useRef, useState } from "react";
 
 function Faq() {
-  const ref = useRef<HTMLDivElement | null>(null);
+  const refs = useRef<Record<string, HTMLDivElement | null>>({});
+  const [submenuOpen, setSubmenuOpen] = useState<Record<string, boolean>>({});
+
+  const handleDropdown = (menu: string) => {
+    setSubmenuOpen((prev) => ({
+      [menu]: !prev[menu],
+    }));
+  };
+
   return (
     <section className="pt-20 pb-7xl">
       <div className="containerX">
@@ -23,21 +31,56 @@ function Faq() {
             </button>
           </div>
           <div>
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-3">
               {faqData.faqs.map((item, index) => (
-                <div className="p-6 bg-white-300 rounded-2xl" key={index}>
-                  <div>
-                    <div className="flex items-center justify-between gap-6 pb-2.5">
-                      <p className="truncate text-lg text-black-800 font-bold">
-                        {item?.question}
-                      </p>
-                      {item?.icon}
-                    </div>
-                    <div>
-                      <p className="text-lg text-black-600 leading-[140%]">
-                        {item?.answer}
-                      </p>
-                    </div>
+                <div
+                  className={cn(
+                    " rounded-2xl overflow-hidden",
+                    submenuOpen[`question${item.id}`]
+                      ? "bg-white-300"
+                      : "bg-transparent"
+                  )}
+                  key={index}
+                  ref={(el) => {
+                    refs.current[`question${item.id}`] = el;
+                  }}
+                >
+                  <button
+                    className="p-6 w-full flex items-center justify-between gap-6 pb-2.5 cursor-pointer"
+                    onClick={() => handleDropdown(`question${item.id}`)}
+                  >
+                    <span
+                      className={cn(
+                        "truncate text-lg",
+                        submenuOpen[`question${item.id}`]
+                          ? "text-black-800 font-bold"
+                          : "text-black-700"
+                      )}
+                    >
+                      {item?.question}
+                    </span>
+                    <ChevronDownIcon
+                      className={cn(
+                        "shrink-0 duration-300",
+                        submenuOpen[`question${item.id}`]
+                          ? "rotate-180 text-black-800"
+                          : "rotate-0 text-black-600"
+                      )}
+                    />
+                  </button>
+                  <div
+                    className="overflow-hidden transition-all duration-300 ease-in-out"
+                    style={{
+                      maxHeight: submenuOpen[`question${item.id}`]
+                        ? `${
+                            refs.current[`question${item.id}`]?.scrollHeight
+                          }px`
+                        : "0",
+                    }}
+                  >
+                    <p className="text-lg text-black-600 leading-[140%] p-6 pt-1">
+                      {item?.answer}
+                    </p>
                   </div>
                 </div>
               ))}

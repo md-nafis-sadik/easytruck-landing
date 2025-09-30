@@ -121,9 +121,10 @@ interface IGoalData {
 // faq
 
 interface IFaqQuestion {
+  id: string;
   question: string;
   answer: string;
-  icon: ReactNode;
+  // icon: ReactNode;
 }
 
 interface IFaqData {
