@@ -1,17 +1,14 @@
-import { colors, footerData, HOME_PAGE_ID, LogoIcon } from "@/service";
+import { footerData, HOME_PAGE_ID } from "@/service";
 import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="py-5 md:py-10 lg:py-16 xl:py-20">
+    <footer className="py-10 lg:py-16 xl:py-20">
       <div className="w-full max-w-[120rem] mx-auto px-5 md:px-10 lg:px-16 xl:px-20">
         <div className="w-full flex flex-col lg:flex-row justify-between items-start gap-6 pb-6 md:pb-8">
           <div>
             <Link href={`#${HOME_PAGE_ID}`} aria-label="Go to Home">
-              <LogoIcon
-                color={colors["blue-900"]}
-                textColor={colors["blue-900"]}
-              />
+              {footerData.logo}
             </Link>
             <p className="text-base md:text-lg lg:text-xl text-black-600 my-4 lg:my-6">
               {footerData.description}

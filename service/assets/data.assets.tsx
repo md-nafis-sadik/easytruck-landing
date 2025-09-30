@@ -183,15 +183,15 @@ export const serviceData: IServiceData = {
   title: "কেন আমাদের সার্ভিস ব্যাবহার করবেন?",
   services: [
     {
-      icon: <BookMarkIcon className="text-main-500" />,
+      icon: <BookMarkIcon className="w-6 md:w-8 text-main-500" />,
       title: "প্রতিদিন বুকিং নিশ্চয়তা",
     },
     {
-      icon: <PaymentIcon className="text-main-500" />,
+      icon: <PaymentIcon className="w-6 md:w-8 text-main-500" />,
       title: "সঠিক ও উচ্চ ভাড়ার সম্ভবনা",
     },
     {
-      icon: <ShieldIcon className="text-main-500" />,
+      icon: <ShieldIcon className="w-6 md:w-8 text-main-500" />,
       title: "নিরাপদ ও ব্রোকারহীন ভাড়ার অভিজ্ঞতা",
     },
   ],
@@ -292,7 +292,13 @@ export const appdownloadData: IDownloadAppData = {
 // footer
 
 export const footerData: IFooterData = {
-  logo: <LogoIcon color={colors["blue-900"]} />,
+  logo: (
+    <LogoIcon
+      className="w-36 lg:w-44"
+      color={colors["blue-900"]}
+      textColor={colors["blue-900"]}
+    />
+  ),
   description: "হাতের মুঠোয় ট্রাক ভাড়ার স্মার্ট সমাধান",
   contacts: ["01712-898613", "01898-923559"],
   addressTitle: "ইজি ভেঞ্চারস",

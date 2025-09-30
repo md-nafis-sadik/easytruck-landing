@@ -19,7 +19,7 @@ function Hero() {
               <div className="w-10 md:w-12 lg:w-14 aspect-square rounded-full bg-white"></div>
             </div>
           </div>
-          <div className="w-full sm:max-w-[26.25rem]">
+          <div className="w-full xs:max-w-[26.25rem]">
             <p className="text-lg md:text-xl lg:text-2xl text-center md:text-start">
               {bannerData.description}
             </p>

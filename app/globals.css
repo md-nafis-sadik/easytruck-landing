@@ -86,6 +86,28 @@
   --text-7xs: 4rem; /* 64rem */
   /* border-radius  */
   --radius-3xs: 1.25rem; /* 20px */
+  /* breakpoint  */
+  --breakpoint-xs: 27.5rem; /* 440px */
+
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 .containerX {

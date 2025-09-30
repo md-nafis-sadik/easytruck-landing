@@ -13,16 +13,18 @@ function Faq() {
   };
 
   return (
-    <section className="pt-20 pb-7xl">
+    <section className="py-10 md:pb-20 lg:pb-7xl md:pt-16 lg:pt-20">
       <div className="containerX">
-        <div className="grid grid-cols-2 gap-12">
-          <div className="w-full max-w-[36rem] flex flex-col gap-4 h-[34.125rem]">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12">
+          <div className="w-full xl:max-w-[36rem] flex flex-col gap-4 xl:h-[34.125rem]">
             <div className="tag">{faqData.tag}</div>
             <h2 className="title">{faqData.title}</h2>
-            <p className="flex-1 text-xl text-black-700">
+            <p className="flex-1 text-base md:text-lg lg:text-xl text-black-700">
               {faqData.description}
             </p>
-            <p className="text-xl text-black-700">{faqData.contactBtnText}</p>
+            <p className="text-base md:text-lg lg:text-xl text-black-700 mt-4 xl:mt-0">
+              {faqData.contactBtnText}
+            </p>
             <button
               type="button"
               className="btn bg-main-500 text-white font-bold px-6 py-3.5 max-w-max"
@@ -30,8 +32,8 @@ function Faq() {
               {faqData.contactBtnTitle}
             </button>
           </div>
-          <div>
-            <div className="flex flex-col gap-3">
+          <div className="">
+            <div className="flex flex-col gap-2 sm:gap-3">
               {faqData.faqs.map((item, index) => (
                 <div
                   className={cn(
@@ -46,12 +48,12 @@ function Faq() {
                   }}
                 >
                   <button
-                    className="p-6 w-full flex items-center justify-between gap-6 pb-2.5 cursor-pointer"
+                    className="p-4 sm:p-6 w-full flex items-center justify-between gap-6 pb-2.5 cursor-pointer"
                     onClick={() => handleDropdown(`question${item.id}`)}
                   >
                     <span
                       className={cn(
-                        "truncate text-lg",
+                        "truncate text-base sm:text-lg",
                         submenuOpen[`question${item.id}`]
                           ? "text-black-800 font-bold"
                           : "text-black-700"
@@ -69,7 +71,7 @@ function Faq() {
                     />
                   </button>
                   <div
-                    className="overflow-hidden transition-all duration-300 ease-in-out"
+                    className="transition-all duration-500 ease-in-out"
                     style={{
                       maxHeight: submenuOpen[`question${item.id}`]
                         ? `${
@@ -78,9 +80,11 @@ function Faq() {
                         : "0",
                     }}
                   >
-                    <p className="text-lg text-black-600 leading-[140%] p-6 pt-1">
-                      {item?.answer}
-                    </p>
+                    <div className="p-4 sm:p-6 pt-1 overflow-hidden">
+                      <p className=" text-base sm:text-lg text-black-600 leading-[140%] ">
+                        {item?.answer}
+                      </p>
+                    </div>
                   </div>
                 </div>
               ))}
