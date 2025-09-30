@@ -1,3 +1,4 @@
+import About from "@/components/home/About";
 import Hero from "@/components/home/Hero";
 
 function page() {
@@ -5,7 +6,7 @@ function page() {
     <main className="font-siliguri bg-white">
       <Hero />
       {/* <Company /> */}
-      {/* <About /> */}
+      <About />
       {/* <User /> */}
       {/* <Service /> */}
       {/* <Goal /> */}

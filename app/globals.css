@@ -93,7 +93,7 @@
 }
 
 .tag {
-  @apply w-full h-max max-w-max px-4 py-3.5 bg-white-200 text-black-900 text-base font-semibold leading-[125%] rounded-full;
+  @apply w-full h-max max-w-max px-3 sm:px-4 py-2.5 sm:py-3.5 bg-white-200 text-black-900 text-sm md:text-base font-semibold leading-[125%] rounded-full;
 }
 
 .btn {

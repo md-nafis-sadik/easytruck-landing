@@ -44,13 +44,13 @@ function Hero() {
             </div>
           </div>
         </div>
-        <div className="mt-10 lg:mt-16 md:h-[35.625rem] w-full relative md:p-6 lg:p-8 flex md:items-end justify-center md:justify-end">
+        <div className="mt-10 lg:mt-16 md:h-96 xl:h-[35.625rem] w-full relative md:p-6 lg:p-8 flex md:items-end justify-center md:justify-end">
           <Image
             src={bannerData.banner}
             alt="banner"
             className="absolute top-0 left-0 w-full h-full object-cover rounded-t-2xl hidden md:block"
           />
-          <div className="flex flex-col gap-6 lg:gap-8 py-4 md:py-6 lg:py-8 px-5 md:px-7 lg:px-10 bg-main-500 relative w-full max-w-[22.5rem] rounded-2xl max-h-max">
+          <div className="flex flex-col gap-6 lg:gap-8 py-4 md:py-6 lg:py-8 px-5 md:px-7 lg:px-10 bg-main-500 relative w-full max-w-[26.25rem] lg:max-w-[22.5rem] rounded-2xl max-h-max -mb-28 md:mb-0">
             {bannerData.services.map((service, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-10 md:w-12 lg:w-[3.75rem] aspect-square flex items-center justify-center bg-white rounded-full shrink-0">

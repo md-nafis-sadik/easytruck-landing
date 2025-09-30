@@ -121,7 +121,7 @@ export const aboutData: IAboutData = {
     buttonText: "আরো জানুন",
     buttonLink: "",
   },
-  icon: <WifiIcon className="text-main-500" />,
+  icon: <WifiIcon className="w-6 sm:w-8 text-main-500" />,
   image: images.about,
   bannerTitle: "চলে আসুন ইজিট্রাকে এবং\nআয় বৃদ্ধি করুন।",
 };
