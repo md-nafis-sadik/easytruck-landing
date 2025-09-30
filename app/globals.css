@@ -23,6 +23,7 @@
   /* blue  */
   --blue-900: #014375;
   /* main  */
+  --main-600: #d93a00;
   --main-500: #f64d00;
   --main-400: #f07305;
   --main-100: #ffd1bc;
@@ -60,6 +61,7 @@
   /* blue */
   --color-blue-900: var(--blue-900);
   /* main  */
+  --color-main-600: var(--main-600);
   --color-main-500: var(--main-500);
   --color-main-400: var(--main-400);
   --color-main-100: var(--main-100);
