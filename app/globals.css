@@ -86,6 +86,28 @@
   --text-7xs: 4rem; /* 64rem */
   /* border-radius  */
   --radius-3xs: 1.25rem; /* 20px */
+  /* breakpoint  */
+  --breakpoint-xs: 27.5rem; /* 440px */
+
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
 .containerX {
@@ -93,7 +115,7 @@
 }
 
 .tag {
-  @apply w-full h-max max-w-max px-4 py-3.5 bg-white-200 text-black-900 text-base font-semibold leading-[125%] rounded-full;
+  @apply w-full h-max max-w-max px-3 sm:px-4 py-2.5 sm:py-3.5 bg-white-200 text-black-900 text-sm md:text-base font-semibold leading-[125%] rounded-full;
 }
 
 .btn {
@@ -104,7 +126,7 @@
 }
 
 .title {
-  @apply text-7xs font-bold text-black-800 leading-[130%] -tracking-[0.08rem];
+  @apply text-4xl md:text-5xl lg:text-7xs font-bold text-black-800 leading-[130%] -tracking-[0.08rem];
 }
 
 body {

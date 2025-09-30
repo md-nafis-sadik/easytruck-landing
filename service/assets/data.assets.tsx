@@ -44,7 +44,7 @@ import {
 // header
 
 export const headerData: IHeaderData = {
-  logo: <LogoIcon />,
+  logo: <LogoIcon className="w-28 md:w-36 lg:w-44 duration-200" />,
   appDownloadBtnTitle: "অ্যাপ ডাউনলোড করুন",
   appDownloadBtnLink: "",
   appDownloadBtnIcon: <AppDownloadIcon className="text-white" />,
@@ -64,17 +64,17 @@ export const bannerData: IBannerData = {
   demoLink: "",
   services: [
     {
-      icon: <BookMarkIcon className="text-main-500" />,
+      icon: <BookMarkIcon className="w-5 md:w-6 lg:w-8 text-main-500" />,
       title: "ইজি ট্রাক বুকিং",
       description: "সহজ এবং সাশ্রয়ী",
     },
     {
-      icon: <SupportIcon className="text-main-500" />,
+      icon: <SupportIcon className="w-5 md:w-6 lg:w-8 text-main-500" />,
       title: "২৪/৭ সাপোর্ট",
       description: "আমাদের সাপোর্ট সেন্টার খোলা আছে সর্বোদা",
     },
   ],
-  phoneIcon: <PhoneIcon className="text-white" />,
+  phoneIcon: <PhoneIcon className="w-6 md:w-8 lg:w-10 text-white" />,
   playIcon: <PlayIcon className="text-white" />,
 };
 
@@ -121,7 +121,7 @@ export const aboutData: IAboutData = {
     buttonText: "আরো জানুন",
     buttonLink: "",
   },
-  icon: <WifiIcon className="text-main-500" />,
+  icon: <WifiIcon className="w-6 sm:w-8 text-main-500" />,
   image: images.about,
   bannerTitle: "চলে আসুন ইজিট্রাকে এবং\nআয় বৃদ্ধি করুন।",
 };
@@ -136,31 +136,31 @@ export const userData: IUserData = {
     "ইজিট্রাক অ্যাপের মাধ্যমে ড্রাইভার, ট্রাক মালিক, রিটেইলার, কোম্পানি প্রতিনিধি ও ডিলারগণ ট্রাক বুকিং, সময়মতো ডেলিভারি, ইন অ্যাপ পেমেন্ট এবং রিপোর্টসহ সকল ধরনের সুবিধা পাবেন।",
   services: [
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "ড্রাইভার",
       description:
         "প্রতিদিন ট্রিপ নিশ্চিত, স্বচ্ছ সেবা চার্জ মডেল, সরাসরি ট্রিপ রিকোয়েস্ট ও পেমেন্ট।",
     },
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "ট্রাক মালিক",
       description:
         "প্রতিদিন নতুন ট্রিপের সুযোগ, ইন-অ্যাপ পেমেন্ট সুবিধা, ভাড়া নির্ধারণে স্বচ্ছতা এবং ঝামেলাহীনভাবে ব্যবসা করার নিশ্চয়তা।",
     },
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "রিটেইলার",
       description:
         "দ্রুত ট্রিপ বুকিং, সময়মতো ডেলিভারি, ডিজিটাল রিপোর্ট ও ইনভয়েস সুবিধার মাধ্যমে ব্যবসা পরিচালনা।",
     },
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "কোম্পানি অফিসার",
       description:
         "সহজে ট্রিপ বুকিং, ইনভয়েস ও রিপোর্ট ডাউনলোড, নির্ভরযোগ্য ও দ্রুত পরিবহন ব্যবস্থা।",
     },
     {
-      icon: <UserIcon className="text-main-500" />,
+      icon: <UserIcon className="w-6 md:w-8 text-main-500" />,
       title: "ডিলার",
       description:
         "দ্রুত ট্রিপ বুকিং, সময়মতো ডেলিভারি, ডিজিটাল রিপোর্ট ও ইনভয়েস সুবিধার মাধ্যমে ব্যবসা পরিচালনা।",
@@ -170,7 +170,7 @@ export const userData: IUserData = {
       isImage: true,
       image: images.contact,
       contacts: ["01712-898613", "01898-923559"],
-      phoneIcon: <PhoneIcon className="text-white" />,
+      phoneIcon: <PhoneIcon className="w-6 md:w-8 lg:w-10 text-white" />,
     },
   ],
 };
@@ -183,15 +183,15 @@ export const serviceData: IServiceData = {
   title: "কেন আমাদের সার্ভিস ব্যাবহার করবেন?",
   services: [
     {
-      icon: <BookMarkIcon className="text-main-500" />,
+      icon: <BookMarkIcon className="w-6 md:w-8 text-main-500" />,
       title: "প্রতিদিন বুকিং নিশ্চয়তা",
     },
     {
-      icon: <PaymentIcon className="text-main-500" />,
+      icon: <PaymentIcon className="w-6 md:w-8 text-main-500" />,
       title: "সঠিক ও উচ্চ ভাড়ার সম্ভবনা",
     },
     {
-      icon: <ShieldIcon className="text-main-500" />,
+      icon: <ShieldIcon className="w-6 md:w-8 text-main-500" />,
       title: "নিরাপদ ও ব্রোকারহীন ভাড়ার অভিজ্ঞতা",
     },
   ],
@@ -292,7 +292,13 @@ export const appdownloadData: IDownloadAppData = {
 // footer
 
 export const footerData: IFooterData = {
-  logo: <LogoIcon color={colors["blue-900"]} />,
+  logo: (
+    <LogoIcon
+      className="w-36 lg:w-44"
+      color={colors["blue-900"]}
+      textColor={colors["blue-900"]}
+    />
+  ),
   description: "হাতের মুঠোয় ট্রাক ভাড়ার স্মার্ট সমাধান",
   contacts: ["01712-898613", "01898-923559"],
   addressTitle: "ইজি ভেঞ্চারস",
@@ -317,27 +323,27 @@ export const footerData: IFooterData = {
   ],
   socialLinks: [
     {
-      icon: <FacebookIcon className="text-white" />,
+      icon: <FacebookIcon className="w-4 aspect-square md:w-5 text-white" />,
       link: "",
       ariaLabel: "Facebook",
     },
     {
-      icon: <InstagramIcon className="text-white" />,
+      icon: <InstagramIcon className="w-4 aspect-square md:w-5 text-white" />,
       link: "",
       ariaLabel: "Instagram",
     },
     {
-      icon: <LinkedInIcon className="text-white" />,
+      icon: <LinkedInIcon className="w-4 aspect-square md:w-5 text-white" />,
       link: "",
       ariaLabel: "Linked in",
     },
     {
-      icon: <TwitterIcon className="text-white" />,
+      icon: <TwitterIcon className="w-4 aspect-square md:w-5 text-white" />,
       link: "",
       ariaLabel: "Twitter",
     },
   ],
-  phoneIcon: <PhoneIcon className="text-white" />,
+  phoneIcon: <PhoneIcon className="w-6 md:w-8 lg:w-10 text-white" />,
   copyrightTexts: ["© 2025", " EasyTruck.", " All rights reserved."],
   privacyPolicyLink: "",
   privacyPolicyText: "Privacy & Policy",
