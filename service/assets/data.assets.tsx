@@ -44,13 +44,7 @@ import {
 // header
 
 export const headerData: IHeaderData = {
-  logo: (
-    <LogoIcon
-      className="w-28 md:w-36 lg:w-44 duration-200"
-      color={colors["main-500"]}
-      textColor={colors["main-500"]}
-    />
-  ),
+  logo: <LogoIcon className="w-28 md:w-36 lg:w-44 duration-200" />,
   appDownloadBtnTitle: "অ্যাপ ডাউনলোড করুন",
   appDownloadBtnLink: "",
   appDownloadBtnIcon: <AppDownloadIcon className="text-white" />,
@@ -70,17 +64,17 @@ export const bannerData: IBannerData = {
   demoLink: "",
   services: [
     {
-      icon: <BookMarkIcon className="text-main-500" />,
+      icon: <BookMarkIcon className="w-5 md:w-6 lg:w-8 text-main-500" />,
       title: "ইজি ট্রাক বুকিং",
       description: "সহজ এবং সাশ্রয়ী",
     },
     {
-      icon: <SupportIcon className="text-main-500" />,
+      icon: <SupportIcon className="w-5 md:w-6 lg:w-8 text-main-500" />,
       title: "২৪/৭ সাপোর্ট",
       description: "আমাদের সাপোর্ট সেন্টার খোলা আছে সর্বোদা",
     },
   ],
-  phoneIcon: <PhoneIcon className="text-white" />,
+  phoneIcon: <PhoneIcon className="w-6 md:w-8 lg:w-10 text-white" />,
   playIcon: <PlayIcon className="text-white" />,
 };
 
