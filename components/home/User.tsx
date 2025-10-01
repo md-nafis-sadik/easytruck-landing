@@ -2,7 +2,7 @@ import { userData } from "@/service";
 
 function User() {
   return (
-    <section className="py-10 md:py-20 lg:py-7xl bg-blue-900">
+    <section className="py-10 md:py-20 lg:py-7xl bg-blue-900" id={userData.id}>
       <div className="containerX">
         <div className="w-full max-w-[58.75rem] mx-auto text-center">
           <div className="tag mx-auto">{userData.tag}</div>

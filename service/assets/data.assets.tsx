@@ -14,14 +14,12 @@ import { colors } from "./colors.assets";
 import {
   ABOUT_PAGE_ID,
   COMPANY_PAGE_ID,
-  CONTACT_PAGE_ID,
   DOWNLOAD_PAGE_ID,
   FAQ_PAGE_ID,
   GOAL_PAGE_ID,
-  HELP_PAGE_ID,
   HOME_PAGE_ID,
   SERVICE_PAGE_ID,
-  USER_PAGE_ID,
+  USER_PAGE_ID
 } from "./contant";
 import { images } from "./images.assets";
 import {
@@ -314,11 +312,11 @@ export const footerData: IFooterData = {
     },
     {
       title: "Help Center",
-      link: HELP_PAGE_ID,
+      link: FAQ_PAGE_ID,
     },
     {
       title: "Contact",
-      link: CONTACT_PAGE_ID,
+      link: FAQ_PAGE_ID,
     },
   ],
   socialLinks: [
@@ -345,8 +343,8 @@ export const footerData: IFooterData = {
   ],
   phoneIcon: <PhoneIcon className="w-6 md:w-8 lg:w-10 text-white" />,
   copyrightTexts: ["© 2025", " EasyTruck.", " All rights reserved."],
-  privacyPolicyLink: "",
+  privacyPolicyLink: FAQ_PAGE_ID,
   privacyPolicyText: "Privacy & Policy",
-  helpCenterLink: "",
+  helpCenterLink: FAQ_PAGE_ID,
   helpCenterText: "Help Center",
 };

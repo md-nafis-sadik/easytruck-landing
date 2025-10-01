@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Goal() {
   return (
-    <section className="py-10 md:py-20 lg:py-7xl">
+    <section className="py-10 md:py-20 lg:py-7xl" id={goalData.id}>
       <div className="containerX">
         <div className="tag mx-auto">{goalData.tag}</div>
         <h2 className="title text-center mt-6">{goalData.title}</h2>

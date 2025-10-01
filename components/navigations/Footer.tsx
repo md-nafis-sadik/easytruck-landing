@@ -66,12 +66,18 @@ function Footer() {
           </p>
           <ul className="flex gap-4">
             <li>
-              <Link className="text-sm text-black-700" href={`#`}>
+              <Link
+                className="text-sm text-black-700"
+                href={`#${footerData.privacyPolicyLink}`}
+              >
                 {footerData?.privacyPolicyText}
               </Link>
             </li>
             <li>
-              <Link className="text-sm text-black-700" href={`#`}>
+              <Link
+                className="text-sm text-black-700"
+                href={`#${footerData.helpCenterLink}`}
+              >
                 {footerData?.helpCenterText}
               </Link>
             </li>

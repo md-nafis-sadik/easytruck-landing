@@ -2,7 +2,7 @@ import { aboutData, CheckCircleIcon } from "@/service";
 
 function About() {
   return (
-    <section className="py-10 md:py-20 lg:py-7xl">
+    <section className="py-10 md:py-20 lg:py-7xl" id={aboutData.id}>
       <div className="containerX">
         <div className="flex flex-col md:flex-row justify-between gap-4">
           <div className="tag">{aboutData.tag}</div>
