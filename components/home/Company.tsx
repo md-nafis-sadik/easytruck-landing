@@ -15,8 +15,16 @@ function Company() {
               <Image
                 src={company}
                 alt="company image"
+                width={150}
+                height={50}
                 key={index}
-                objectFit="contain"
+                className="object-contain"
+                style={{
+                  height: "auto",
+                  width: "auto",
+                  maxWidth: "150px",
+                  maxHeight: "50px",
+                }}
               />
             ))}
           </div>

@@ -32,6 +32,8 @@ function Goal() {
             <Image
               src={goalData.image}
               alt="goal image"
+              width={600}
+              height={800}
               className="w-full rounded-3xs"
             />
           </div>

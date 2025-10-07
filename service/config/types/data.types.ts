@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 // header
@@ -26,8 +25,8 @@ interface IBannerData {
   demoTitle: string;
   demoLink: string;
   services: IBannerService[];
-  banner: StaticImageData;
-  bannerBg: StaticImageData;
+  banner: string;
+  bannerBg: string;
   phoneIcon: ReactNode;
   playIcon: ReactNode;
 }
@@ -37,7 +36,7 @@ interface IBannerData {
 interface ICompanyData {
   id?: string;
   title: string;
-  companies: StaticImageData[];
+  companies: string[];
 }
 
 // about
@@ -59,7 +58,7 @@ interface IAboutData {
     buttonLink: string;
   };
   icon: ReactNode;
-  image: StaticImageData;
+  image: string;
   bannerTitle: string;
 }
 
@@ -69,7 +68,7 @@ interface IUserService {
   icon?: ReactNode;
   title: string;
   description?: string;
-  image?: StaticImageData;
+  image?: string;
   isImage?: boolean;
   contacts?: string[];
   phoneIcon?: ReactNode;
@@ -103,7 +102,7 @@ interface IGoalData {
   id?: string;
   tag: string;
   title: string;
-  image: StaticImageData;
+  image: string;
   goal: {
     title: string;
     description: string;
@@ -149,7 +148,7 @@ interface IDownloadAppData {
   driverAppBtnLink: string;
   retailerAppBtnTitle: string;
   retailerAppBtnLink: string;
-  image: StaticImageData;
+  image: string;
 }
 
 interface IFooterData {

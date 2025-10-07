@@ -19,9 +19,9 @@ import {
   GOAL_PAGE_ID,
   HOME_PAGE_ID,
   SERVICE_PAGE_ID,
-  USER_PAGE_ID
+  USER_PAGE_ID,
 } from "./contant";
-import { images } from "./images.assets";
+import images from "./images.assets";
 import {
   AppDownloadIcon,
   BookMarkIcon,

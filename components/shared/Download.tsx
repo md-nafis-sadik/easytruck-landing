@@ -31,6 +31,8 @@ function Download() {
         <Image
           src={appdownloadData.image}
           alt="app download data"
+          width={1024}
+          height={800}
           className="lg:max-w-[30rem] xl:max-w-[37.25rem] lg:-mt-8"
         />
       </div>

@@ -1,4 +1,5 @@
 import { aboutData, CheckCircleIcon } from "@/service";
+import images from "@/service/assets/images.assets";
 
 function About() {
   return (
@@ -48,7 +49,7 @@ function About() {
           <div
             className="w-full relative flex items-end h-60 sm:h-86 md:h-auto p-4 lg:p-6"
             style={{
-              backgroundImage: `url("${aboutData.image.src}")`,
+              backgroundImage: `url("${images.about}")`,
               backgroundSize: "cover",
               backgroundPosition: "top",
               borderRadius: "20px",
