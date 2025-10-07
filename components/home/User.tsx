@@ -20,7 +20,7 @@ function User() {
                 key={index}
                 className="min-h-56 md:min-h-[17.5rem] p-6 md:p-8 bg-white flex flex-col justify-end rounded-3xs gap-2.5 relative overflow-hidden text-white"
                 style={{
-                  backgroundImage: `url("${item.image ? item.image.src : ""}")`,
+                  backgroundImage: `url("${item.image ? item.image : ""}")`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
