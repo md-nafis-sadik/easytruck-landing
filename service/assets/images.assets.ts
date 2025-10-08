@@ -39,6 +39,7 @@ const images = {
   lafarge: "/images/lafarge.png",
   premierCement: "/images/premier-cement.png",
   shahCement: "/images/shah-cement.png",
+  ventureLogo :"/svg/ventures-logo.svg"
 };
 
 export default images;

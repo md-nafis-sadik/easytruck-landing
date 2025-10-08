@@ -299,6 +299,7 @@ export const footerData: IFooterData = {
   ),
   description: "হাতের মুঠোয় ট্রাক ভাড়ার স্মার্ট সমাধান",
   contacts: ["01712-898613", "01898-923559"],
+  addressImage: images.ventureLogo,
   addressTitle: "ইজি ভেঞ্চারস",
   address: "লেভেল ৬বি, সিলিকন টাওয়ার, হাইটেক পার্ক, \nরাজশাহী-৬০০০",
   links: [
@@ -322,22 +323,22 @@ export const footerData: IFooterData = {
   socialLinks: [
     {
       icon: <FacebookIcon className="w-4 aspect-square md:w-5 text-white" />,
-      link: "",
+      link: "https://www.facebook.com/myeasytruck",
       ariaLabel: "Facebook",
     },
     {
       icon: <InstagramIcon className="w-4 aspect-square md:w-5 text-white" />,
-      link: "",
+      link: "https://www.facebook.com/myeasytruck",
       ariaLabel: "Instagram",
     },
     {
       icon: <LinkedInIcon className="w-4 aspect-square md:w-5 text-white" />,
-      link: "",
+      link: "https://www.facebook.com/myeasytruck",
       ariaLabel: "Linked in",
     },
     {
       icon: <TwitterIcon className="w-4 aspect-square md:w-5 text-white" />,
-      link: "",
+      link: "https://www.facebook.com/myeasytruck",
       ariaLabel: "Twitter",
     },
   ],

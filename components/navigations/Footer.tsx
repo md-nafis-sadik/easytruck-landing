@@ -1,4 +1,5 @@
 import { footerData, HOME_PAGE_ID } from "@/service";
+import Image from "next/image";
 import Link from "next/link";
 
 function Footer() {
@@ -25,10 +26,17 @@ function Footer() {
             </a>
           </div>
           <div>
-            <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-black-800 mb-2 lg:mb-4">
+            {/* <h2 className="text-lg md:text-xl lg:text-2xl font-bold text-black-800 mb-2 lg:mb-4">
               {footerData.addressTitle}
-            </h2>
-            <p className="text-base md:text-lg lg:text-xl text-black-600 whitespace-pre-wrap">
+            </h2> */}
+            <Image
+              src={footerData.addressImage}
+              alt="Footer address image"
+              width={300}
+              height={200}
+              className="w-32 lg:w-40 h-auto"
+            />
+            <p className="text-base md:text-lg lg:text-xl text-black-600 whitespace-pre-wrap mt-4">
               {footerData.address}
             </p>
           </div>
@@ -49,7 +57,9 @@ function Footer() {
               <li key={index}>
                 <Link
                   className="w-8 h-8 md:w-11 md:h-11 flex items-center justify-center bg-black-800 rounded-full hover:bg-main-500 duration-200"
-                  href={`#${item?.link}`}
+                  href={item?.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={item?.ariaLabel}
                 >
                   {item?.icon}

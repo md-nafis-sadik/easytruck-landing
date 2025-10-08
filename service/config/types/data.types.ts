@@ -156,6 +156,7 @@ interface IFooterData {
   description: string;
   contacts: string[];
   addressTitle: string;
+  addressImage: string;
   address: string;
   links: {
     title: string;
