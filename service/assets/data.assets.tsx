@@ -186,11 +186,11 @@ export const serviceData: IServiceData = {
     },
     {
       icon: <PaymentIcon className="w-6 md:w-8 text-main-500" />,
-      title: "সঠিক ও উচ্চ ভাড়ার সম্ভবনা",
+      title: "সঠিক ও আকর্ষণীয় ভাড়ার সম্ভাবনা",
     },
     {
       icon: <ShieldIcon className="w-6 md:w-8 text-main-500" />,
-      title: "নিরাপদ ও ব্রোকারহীন ভাড়ার অভিজ্ঞতা",
+      title: "নিরাপদ ও ঝামেলা মুক্ত ভাড়া নিশ্চয়তা",
     },
   ],
 };
