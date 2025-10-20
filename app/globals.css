@@ -23,10 +23,13 @@
   /* blue  */
   --blue-900: #014375;
   /* main  */
+  --main-600: #d93a00;
   --main-500: #f64d00;
   --main-400: #f07305;
   --main-100: #ffd1bc;
   --main-50: #fae1cb;
+  /* yellow  */
+  --yellow-300: #ffe374;
   /* status   */
   --status-success: #00925a;
   --status-error: #ff1a1a;
@@ -38,25 +41,34 @@
   /* colors  */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  /* white  */
   --color-white: var(--white);
   --color-white-300: var(--white-300);
   --color-white-200: var(--white-200);
   --color-white-100: var(--white-100);
+  /* black  */
   --color-black: var(--black);
   --color-black-900: var(--black-900);
   --color-black-800: var(--black-800);
   --color-black-700: var(--black-700);
   --color-black-600: var(--black-600);
   --color-black-500: var(--black-500);
+  /* neutral  */
   --color-neutral-400: var(--neutral-400);
   --color-neutral-300: var(--neutral-300);
   --color-neutral-200: var(--neutral-200);
   --color-neutral-100: var(--neutral-100);
+  /* blue */
   --color-blue-900: var(--blue-900);
+  /* main  */
+  --color-main-600: var(--main-600);
   --color-main-500: var(--main-500);
   --color-main-400: var(--main-400);
   --color-main-100: var(--main-100);
   --color-main-50: var(--main-50);
+  /* yellow  */
+  --color-yellow-300: var(--yellow-300);
+  /* status  */
   --color-status-success: var(--status-success);
   --color-status-error: var(--status-error);
   --color-status-warning: var(--status-warning);
@@ -64,13 +76,62 @@
 
   /* fonts  */
   --font-siliguri: var(--font-hind-siliguri);
+  --font-inter: var(--font-inter);
+  /* custom space  */
+  --spacing-5xl: 3.75rem; /* 60px */
+  --spacing-7xl: 7.5rem; /* 120px */
+  /* font size  */
+  --text-3xs: 1.75rem; /* 28rem */
+  --text-4xs: 2rem; /* 32rem */
+  --text-7xs: 4rem; /* 64rem */
+  /* border-radius  */
+  --radius-3xs: 1.25rem; /* 20px */
+  /* breakpoint  */
+  --breakpoint-xs: 27.5rem; /* 440px */
+
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.containerX {
+  @apply w-full max-w-[120rem] mx-auto px-6 md:px-10 lg:px-20 xl:px-28 2xl:px-32 duration-200;
+}
+
+.tag {
+  @apply w-full h-max max-w-max px-3 sm:px-4 py-2.5 sm:py-3.5 bg-white-200 text-black-900 text-sm md:text-base font-semibold leading-[125%] rounded-full;
+}
+
+.btn {
+  @apply flex items-center justify-center cursor-pointer disabled:cursor-default transition-transform duration-200 ease-in-out;
+  &:active {
+    @apply scale-90;
   }
+}
+
+.title {
+  @apply text-4xl md:text-5xl lg:text-7xs font-bold text-black-800 leading-[130%] -tracking-[0.08rem];
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 3rem; /*48px*/
 }
 
 body {
