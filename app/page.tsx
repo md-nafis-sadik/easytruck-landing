@@ -11,7 +11,7 @@ function page() {
   return (
     <main className="font-siliguri bg-white">
       <Hero />
-      <Company />
+      {/* <Company /> */}
       <About />
       <User />
       <Service />

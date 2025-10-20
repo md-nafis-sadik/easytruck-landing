@@ -14,16 +14,14 @@ import { colors } from "./colors.assets";
 import {
   ABOUT_PAGE_ID,
   COMPANY_PAGE_ID,
-  CONTACT_PAGE_ID,
   DOWNLOAD_PAGE_ID,
   FAQ_PAGE_ID,
   GOAL_PAGE_ID,
-  HELP_PAGE_ID,
   HOME_PAGE_ID,
   SERVICE_PAGE_ID,
   USER_PAGE_ID,
 } from "./contant";
-import { images } from "./images.assets";
+import images from "./images.assets";
 import {
   AppDownloadIcon,
   BookMarkIcon,
@@ -116,7 +114,7 @@ export const aboutData: IAboutData = {
       "প্রতিদিন ট্রিপ বুকিংয়ের নিশ্চয়তা",
       "সঠিক ও প্রতিযোগিতামূলক ভাড়া",
       "লাইভ লোকেশন ট্র্যাকিং",
-      "নিরাপদ ও ব্রোকারহীন ভাড়ার অভিজ্ঞতা",
+      "নিরাপদ ও ঝামেলা মুক্ত ভাড়া নিশ্চয়তা",
     ],
     buttonText: "আরো জানুন",
     buttonLink: "",
@@ -188,11 +186,11 @@ export const serviceData: IServiceData = {
     },
     {
       icon: <PaymentIcon className="w-6 md:w-8 text-main-500" />,
-      title: "সঠিক ও উচ্চ ভাড়ার সম্ভবনা",
+      title: "সঠিক ও আকর্ষণীয় ভাড়ার সম্ভাবনা",
     },
     {
       icon: <ShieldIcon className="w-6 md:w-8 text-main-500" />,
-      title: "নিরাপদ ও ব্রোকারহীন ভাড়ার অভিজ্ঞতা",
+      title: "নিরাপদ ও ঝামেলা মুক্ত ভাড়া নিশ্চয়তা",
     },
   ],
 };
@@ -301,6 +299,7 @@ export const footerData: IFooterData = {
   ),
   description: "হাতের মুঠোয় ট্রাক ভাড়ার স্মার্ট সমাধান",
   contacts: ["01712-898613", "01898-923559"],
+  addressImage: images.ventureLogo,
   addressTitle: "ইজি ভেঞ্চারস",
   address: "লেভেল ৬বি, সিলিকন টাওয়ার, হাইটেক পার্ক, \nরাজশাহী-৬০০০",
   links: [
@@ -314,39 +313,39 @@ export const footerData: IFooterData = {
     },
     {
       title: "Help Center",
-      link: HELP_PAGE_ID,
+      link: FAQ_PAGE_ID,
     },
     {
       title: "Contact",
-      link: CONTACT_PAGE_ID,
+      link: FAQ_PAGE_ID,
     },
   ],
   socialLinks: [
     {
       icon: <FacebookIcon className="w-4 aspect-square md:w-5 text-white" />,
-      link: "",
+      link: "https://www.facebook.com/myeasytruck",
       ariaLabel: "Facebook",
     },
     {
       icon: <InstagramIcon className="w-4 aspect-square md:w-5 text-white" />,
-      link: "",
+      link: "https://www.facebook.com/myeasytruck",
       ariaLabel: "Instagram",
     },
     {
       icon: <LinkedInIcon className="w-4 aspect-square md:w-5 text-white" />,
-      link: "",
+      link: "https://www.facebook.com/myeasytruck",
       ariaLabel: "Linked in",
     },
     {
       icon: <TwitterIcon className="w-4 aspect-square md:w-5 text-white" />,
-      link: "",
+      link: "https://www.facebook.com/myeasytruck",
       ariaLabel: "Twitter",
     },
   ],
   phoneIcon: <PhoneIcon className="w-6 md:w-8 lg:w-10 text-white" />,
   copyrightTexts: ["© 2025", " EasyTruck.", " All rights reserved."],
-  privacyPolicyLink: "",
+  privacyPolicyLink: FAQ_PAGE_ID,
   privacyPolicyText: "Privacy & Policy",
-  helpCenterLink: "",
+  helpCenterLink: FAQ_PAGE_ID,
   helpCenterText: "Help Center",
 };

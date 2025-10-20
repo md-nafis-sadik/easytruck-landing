@@ -13,7 +13,10 @@ function Faq() {
   };
 
   return (
-    <section className="py-10 md:pb-20 lg:pb-7xl md:pt-16 lg:pt-20">
+    <section
+      className="py-10 md:pb-20 lg:pb-7xl md:pt-16 lg:pt-20"
+      id={faqData.id}
+    >
       <div className="containerX">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-8 lg:gap-12">
           <div className="w-full xl:max-w-[36rem] flex flex-col gap-4 xl:h-[34.125rem]">

@@ -2,7 +2,7 @@ import { serviceData } from "@/service";
 
 function Service() {
   return (
-    <section className="py-10 md:py-20 lg:py-7xl">
+    <section className="py-10 md:py-20 lg:py-7xl" id={serviceData.id}>
       <div className="containerX">
         <div className="tag mx-auto">{serviceData.tag}</div>
         <h2 className="title text-center mt-4 md:mt-6">{serviceData.title}</h2>

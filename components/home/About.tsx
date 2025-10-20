@@ -1,8 +1,9 @@
 import { aboutData, CheckCircleIcon } from "@/service";
+import images from "@/service/assets/images.assets";
 
 function About() {
   return (
-    <section className="py-10 md:py-20 lg:py-7xl">
+    <section className="py-10 md:py-20 lg:py-7xl" id={aboutData.id}>
       <div className="containerX">
         <div className="flex flex-col md:flex-row justify-between gap-4">
           <div className="tag">{aboutData.tag}</div>
@@ -48,7 +49,7 @@ function About() {
           <div
             className="w-full relative flex items-end h-60 sm:h-86 md:h-auto p-4 lg:p-6"
             style={{
-              backgroundImage: `url("${aboutData.image.src}")`,
+              backgroundImage: `url("${images.about}")`,
               backgroundSize: "cover",
               backgroundPosition: "top",
               borderRadius: "20px",

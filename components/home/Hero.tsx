@@ -48,6 +48,8 @@ function Hero() {
           <Image
             src={bannerData.banner}
             alt="banner"
+            width={1200}
+            height={600}
             className="absolute top-0 left-0 w-full h-full object-cover rounded-t-2xl hidden md:block"
           />
           <div className="flex flex-col gap-6 lg:gap-8 py-4 md:py-6 lg:py-8 px-5 md:px-7 lg:px-10 bg-main-500 relative w-full max-w-[26.25rem] lg:max-w-[22.5rem] rounded-2xl max-h-max -mb-28 md:mb-0">
@@ -72,6 +74,8 @@ function Hero() {
       <Image
         src={bannerData.bannerBg}
         alt="banner bg"
+        width={1200}
+        height={600}
         className="absolute top-0 left-0 w-full h-full object-cover bg-top"
         priority
       />
