@@ -9,7 +9,7 @@ function Hero() {
     >
       <div className="containerX relative z-40 text-white">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-x-6 gap-y-10">
-          <div className="w-full sm:max-w-[40rem] lg:max-w-[38.75rem] text-center md:text-start">
+          <div className="w-full sm:max-w-[40rem] lg:max-w-[44rem] text-center md:text-start">
             <h1 className="text-3xl sm:text-5xl xl:text-7xl font-bold leading-[115%] tracking-[-0.046rem]">
               {bannerData.titles[0]}{" "}
               <span className="text-yellow-300">{bannerData.titles[1]}</span>
