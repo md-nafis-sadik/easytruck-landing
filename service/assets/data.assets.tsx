@@ -54,7 +54,7 @@ export const bannerData: IBannerData = {
   id: HOME_PAGE_ID,
   banner: images.banner,
   bannerBg: images.bannerBg,
-  titles: ["হাতের মুঠোয় ট্রাক ভাড়ার,", "স্মার্ট সমাধান"],
+  titles: ["শিল্পখাতে পরিবহন এখন আরও","সহজ ও নির্ভরযোগ্য"],
   description:
     "আমাদের আধুনিক টেকনোনোলজি আপনার ট্রাক বুকিং এবং ট্র্যাকিং করেছে সহজ, সাশ্রয়ী ও নিরাপদ",
   contacts: ["01712-898613", "01898-923559"],
@@ -103,7 +103,7 @@ export const aboutData: IAboutData = {
     counts: [
       {
         title: "ড্রাইভার প্যানেল",
-        count: "৫০০+",
+        count: "৫০০০+",
       },
       {
         title: "কাস্টমার সাপোর্ট",
